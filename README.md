@@ -29,7 +29,8 @@ This repository contains bilingual study materials and code developed for a univ
 - Directories are organized by lecture deck (`L01`, `L02`, and so on), and the course roadmap table maps each week to the decks covered.
 
 > **🤖 AI-Assisted Development**
-> [Claude Code](https://claude.ai/download) and [Codex](https://github.com/openai/codex) were used as study assistants for organizing the lecture notes.
+> This course encourages the use of AI agents.
+> [Claude Code](https://claude.ai/download) and [Codex](https://github.com/openai/codex) were used as study and coding assistants throughout the course.
 
 <br><a name="course-information"></a>
 ## 📚 Course Information

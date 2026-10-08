@@ -29,7 +29,8 @@
 - 디렉토리는 강의자료 번호(`L01`, `L02` 등)를 기준으로 구성하며, 주차별 계획 및 진도 표에 각 주차에 진행한 강의자료를 정리합니다.
 
 > **🤖 AI 에이전트 활용**
-> [Claude Code](https://claude.ai/download)와 [Codex](https://github.com/openai/codex)를 강의 내용 정리를 위한 학습 보조 도구로 활용하였습니다.
+> 본 과목은 AI 에이전트 사용을 권장합니다.
+> 수업 전반에 걸쳐 [Claude Code](https://claude.ai/download)와 [Codex](https://github.com/openai/codex)를 학습 보조 및 코딩 어시스턴트로 활용하였습니다.
 
 <br><a name="course-information"></a>
 ## 📚 강의 정보
