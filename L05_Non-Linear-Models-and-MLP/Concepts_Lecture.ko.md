@@ -129,9 +129,9 @@ $$
 z = 4h_1 + 4h_2 + 4h_3 - 10, \qquad \hat{y} = \sigma(z)
 $$
 
-![Lecture 05, Page 2: 세 hidden unit의 경계 h1, h2, h3와 그 조합으로 만들어지는 삼각형 모양의 class 1 영역](../images/L05_p02.png)
+![그림 1. 세 hidden unit의 경계 h1, h2, h3와 그 조합으로 만들어지는 삼각형 모양의 class 1 영역 (2쪽)](../images/L05_p02.png)
 
-*Lecture 05, Page 2: 세 hidden unit의 경계 h1, h2, h3와 그 조합으로 만들어지는 삼각형 모양의 class 1 영역*
+*그림 1. 세 hidden unit의 경계 h1, h2, h3와 그 조합으로 만들어지는 삼각형 모양의 class 1 영역 (2쪽)*
 
 세 경계의 안쪽(z₁ > 0, z₂ > 0, z₃ > 0)에서는 세 hidden unit이 모두 1에 가까워 z ≈ 4 × 3 − 10 = 2 > 0이 되고, 바깥에서는 하나 이상이 0에 가까워 z < 0이 된다. 즉 **각 hidden unit은 하나의 선형 경계를 만들고, output layer가 이를 조합하여 비선형 결정 영역을 만든다.**
 
@@ -304,9 +304,9 @@ $$
 
 **Loss 값의 비교 (y = 1인 경우).** 정답이 y = 1이라 하자. MSE를 L_MSE = ½(y − ŷ)²로 정의했다면 L_MSE = ½(1 − ŷ)²이다. 따라서 ŷ = 0일 때 최대값은 L_MSE = ½ = 0.5이고, ŷ = 1일 때 L_MSE = 0이다. 즉 MSE 곡선은 정확히 0.5에서 시작해서 0으로 내려간다. 반면 BCE는 L_BCE = −log(ŷ) (y = 1)이므로, ŷ → 0이면 −log(ŷ) → ∞이다. 즉 BCE는 어떤 유한한 값에서 시작하는 것이 아니라 무한대로 발산한다.
 
-![Lecture 05, Page 7: 정답이 y = 1일 때 예측값 ŷ에 따른 MSE와 BCE의 loss 곡선](../images/L05_p07.png)
+![그림 2. 정답이 y = 1일 때 예측값 ŷ에 따른 MSE와 BCE의 loss 곡선 (7쪽)](../images/L05_p07.png)
 
-*Lecture 05, Page 7: 정답이 y = 1일 때 예측값 ŷ에 따른 MSE와 BCE의 loss 곡선*
+*그림 2. 정답이 y = 1일 때 예측값 ŷ에 따른 MSE와 BCE의 loss 곡선 (7쪽)*
 
 | ŷ | MSE ½(1 − ŷ)² | BCE −ln ŷ |
 |:-:|:-------------:|:---------:|
@@ -676,9 +676,9 @@ Backpropagation은 신경망을 다시 살린 중요한 전환점이었다.
 
 **2) MLP의 손실함수: Non-convex.** MLP는 여러 층의 비선형 함수가 합성되어 손실함수가 매우 복잡한 형태(non-convex)를 가진다. 여러 개의 local minimum, saddle point, 평평한 영역이 존재하며, 초기값에 따라 서로 다른 해에 수렴할 수 있다.
 
-![Lecture 05, Page 20: 로지스틱 회귀의 convex 손실함수(전역 최소값에 수렴)와 MLP의 non-convex 손실함수(local minimum, saddle point, 평평한 영역, global minimum), 그리고 각각의 등고선](../images/L05_p20.png)
+![그림 3. 로지스틱 회귀의 convex 손실함수(전역 최소값에 수렴)와 MLP의 non-convex 손실함수(local minimum, saddle point, 평평한 영역, global minimum), 그리고 각각의 등고선 (20쪽)](../images/L05_p20.png)
 
-*Lecture 05, Page 20: 로지스틱 회귀의 convex 손실함수(전역 최소값에 수렴)와 MLP의 non-convex 손실함수(local minimum, saddle point, 평평한 영역, global minimum), 그리고 각각의 등고선*
+*그림 3. 로지스틱 회귀의 convex 손실함수(전역 최소값에 수렴)와 MLP의 non-convex 손실함수(local minimum, saddle point, 평평한 영역, global minimum), 그리고 각각의 등고선 (20쪽)*
 
 등고선(contour)으로 보면 convex 손실함수는 하나의 최소값을 중심으로 한 동심 타원이지만, non-convex 손실함수는 여러 개의 최소값, 안장점, 평평한 영역이 섞인 복잡한 모양이다.
 
@@ -996,9 +996,9 @@ graph LR
 - **Depth(깊이) = hidden layer 수:** hidden layer의 개수이다. 여러 층을 거치면서 앞에서 만든 패턴을 다시 조합하여 더 복잡한 표현을 만들 수 있다.
 - 예: 2 → 4 → 1은 너비 4, 깊이 1이다.
 
-![Lecture 05, Page 26: Width 변화(hidden unit 1, 2, 4, 8개)와 Depth 변화(hidden layer 1, 2, 3개 이상)에 따른 원형 데이터의 결정 경계](../images/L05_p26.png)
+![그림 4. Width 변화(hidden unit 1, 2, 4, 8개)와 Depth 변화(hidden layer 1, 2, 3개 이상)에 따른 원형 데이터의 결정 경계 (26쪽)](../images/L05_p26.png)
 
-*Lecture 05, Page 26: Width 변화(hidden unit 1, 2, 4, 8개)와 Depth 변화(hidden layer 1, 2, 3개 이상)에 따른 원형 데이터의 결정 경계*
+*그림 4. Width 변화(hidden unit 1, 2, 4, 8개)와 Depth 변화(hidden layer 1, 2, 3개 이상)에 따른 원형 데이터의 결정 경계 (26쪽)*
 
 **Width 변화: hidden unit 수에 따른 결정 경계(한 개의 hidden layer).**
 
@@ -1072,9 +1072,9 @@ $$
 
 입력 x → h⁽¹⁾ → h⁽²⁾ → h⁽³⁾ → 출력 y의 순서로, 각 층의 출력은 다음 층의 입력이 되며 **새로운 feature** 가 된다.
 
-![Lecture 05, Page 27: 원래 입력공간 x, 첫 번째 hidden layer의 공간 h(1), 두 번째 hidden layer의 공간 h(2)에서 두 class가 점점 분리되는 모습](../images/L05_p27.png)
+![그림 5. 원래 입력공간 x, 첫 번째 hidden layer의 공간 h(1), 두 번째 hidden layer의 공간 h(2)에서 두 class가 점점 분리되는 모습 (27쪽)](../images/L05_p27.png)
 
-*Lecture 05, Page 27: 원래 입력공간 x, 첫 번째 hidden layer의 공간 h(1), 두 번째 hidden layer의 공간 h(2)에서 두 class가 점점 분리되는 모습*
+*그림 5. 원래 입력공간 x, 첫 번째 hidden layer의 공간 h(1), 두 번째 hidden layer의 공간 h(2)에서 두 class가 점점 분리되는 모습 (27쪽)*
 
 | 공간 | 데이터의 모습 |
 |:-----|:--------------|
@@ -1192,9 +1192,9 @@ $$
 
 **2. Sigmoid 대신 ReLU.** Sigmoid는 출력이 포화되어 gradient가 작아지지만, ReLU는 양의 영역에서 gradient가 잘 전달된다.
 
-![Lecture 05, Page 29: Sigmoid와 그 미분(최댓값 0.25), ReLU와 그 미분(양의 영역에서 1)](../images/L05_p29.png)
+![그림 6. Sigmoid와 그 미분(최댓값 0.25), ReLU와 그 미분(양의 영역에서 1) (29쪽)](../images/L05_p29.png)
 
-*Lecture 05, Page 29: Sigmoid와 그 미분(최댓값 0.25), ReLU와 그 미분(양의 영역에서 1)*
+*그림 6. Sigmoid와 그 미분(최댓값 0.25), ReLU와 그 미분(양의 영역에서 1) (29쪽)*
 
 | | Sigmoid (σ) | ReLU |
 |:--|:--|:--|

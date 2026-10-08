@@ -576,9 +576,9 @@ However, the shapes of the functions differ.
 
 That is why, while a tree is growing, Gini and entropy distinguish small differences between split candidates better.
 
-![Lecture 03, Page 16: Curves of misclassification error, Gini impurity, and entropy over p = P(Class A)](../images/L03_p16.png)
+![Figure 1. Curves of misclassification error, Gini impurity, and entropy over p = P(Class A) (p. 16)](../images/L03_p16.png)
 
-*Lecture 03, Page 16: Curves of misclassification error, Gini impurity, and entropy over p = P(Class A)*
+*Figure 1. Curves of misclassification error, Gini impurity, and entropy over p = P(Class A) (p. 16)*
 
 All three criteria look in the same direction. The error rate looks directly at "how many are wrong", while Gini and entropy look more smoothly at "how mixed it is".
 
@@ -660,9 +660,9 @@ graph TD
 
 In the data below, it is generally A when x₁ < 5 and B when x₁ ≥ 5. Now suppose a single B is observed at (3, 3) in the left region. This observation may be a measurement error or an accidental exception, or it may be a real subgroup that has not yet been observed enough.
 
-![Lecture 03, Page 17: Two boundaries for the same training data, a simple boundary on the left (1 training error) and a boundary that isolates the exceptional B on the right (0 training errors)](../images/L03_p17.png)
+![Figure 2. Two boundaries for the same training data, a simple boundary on the left (1 training error) and a boundary that isolates the exceptional B on the right (0 training errors) (p. 17)](../images/L03_p17.png)
 
-*Lecture 03, Page 17: Two boundaries for the same training data, a simple boundary on the left (1 training error) and a boundary that isolates the exceptional B on the right (0 training errors)*
+*Figure 2. Two boundaries for the same training data, a simple boundary on the left (1 training error) and a boundary that isolates the exceptional B on the right (0 training errors) (p. 17)*
 
 In the figure, circles are A, triangles are B, and the background color is the predicted class. The right side adds four more splits to isolate the single B.
 
@@ -774,9 +774,9 @@ A node of a typical decision tree uses a threshold on a single feature. In a two
 
 For example, a decision tree draws a vertical boundary at one value of x₁, splits the region to its right horizontally at x₂, and splits the lower part vertically at x₁ again, making four regions A, B, C, and D. In contrast, if the two classes are divided along a diagonal, a linear boundary needs only that one diagonal. For data in which x gathers in the upper left and o in the lower right, a decision tree (DT) must follow the boundary with a staircase of alternating horizontal and vertical lines, while a linear model (LM) divides it with a single straight line.
 
-![Lecture 03, Page 22: Axis-aligned approximation (the staircase boundary of a decision tree) versus a linear boundary for data divided along a diagonal](../images/L03_p22.png)
+![Figure 3. Axis-aligned approximation (the staircase boundary of a decision tree) versus a linear boundary for data divided along a diagonal (p. 22)](../images/L03_p22.png)
 
-*Lecture 03, Page 22: Axis-aligned approximation (the staircase boundary of a decision tree) versus a linear boundary for data divided along a diagonal*
+*Figure 3. Axis-aligned approximation (the staircase boundary of a decision tree) versus a linear boundary for data divided along a diagonal (p. 22)*
 
 The axis-aligned approximation on the left builds a staircase of many horizontal and vertical splits to follow the diagonal boundary. The linear boundary on the right separates the same two classes with a single straight line.
 

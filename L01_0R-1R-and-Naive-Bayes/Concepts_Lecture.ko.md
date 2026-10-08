@@ -192,9 +192,9 @@ Temperature가 숫자로 주어지면 각 숫자를 모두 서로 다른 value�
 
 Temperature에 대해 구간 수를 달리하면 다음과 같다.
 
-![Lecture 01, Page 4: 구간 수에 따른 Temperature의 discretization (A 구간 하나, B 77.5 기준 두 구간, C 지나치게 많은 구간)](../images/L01_p04.png)
+![그림 1. 구간 수에 따른 Temperature의 discretization (A 구간 하나, B 77.5 기준 두 구간, C 지나치게 많은 구간) (4쪽)](../images/L01_p04.png)
 
-*Lecture 01, Page 4: 구간 수에 따른 Temperature의 discretization (A 구간 하나, B 77.5 기준 두 구간, C 지나치게 많은 구간)*
+*그림 1. 구간 수에 따른 Temperature의 discretization (A 구간 하나, B 77.5 기준 두 구간, C 지나치게 많은 구간) (4쪽)*
 
 - **A. No split:** 구간이 하나뿐이라 매우 단순하다. 0-R과 같다.
 - **B. Two intervals:** threshold = 77.5에서 나눈다. 최종 1-R rule이다.
@@ -534,9 +534,9 @@ Naive Bayes의 성격은 다음 질문으로 정리할 수 있다.
 
 단어(word)를 attribute로 보고 spam과 valid email(ham)을 분류하는 예를 보자.
 
-![Lecture 01, Page 18: 단어를 attribute로 사용하는 spam 예제](../images/L01_p18.png)
+![그림 2. 단어를 attribute로 사용하는 spam 예제 (18쪽)](../images/L01_p18.png)
 
-*Lecture 01, Page 18: 단어를 attribute로 사용하는 spam 예제*
+*그림 2. 단어를 attribute로 사용하는 spam 예제 (18쪽)*
 
 | Doc | Email text | Class |
 |:---:|:-----------|:-----:|

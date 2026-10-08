@@ -548,9 +548,9 @@ This line is the decision boundary; one side has p < 0.5 (class 0) and the other
 
 Logistic regression assigns a probability p = P(y = 1 | x) to every point of the feature space.
 
-![Lecture 04, Page 16: The two-dimensional feature space and the probability surface above it, the decision boundary as the set of points with p = 0.5, and the sigmoid shape seen from the side](../images/L04_p16.png)
+![Figure 1. The two-dimensional feature space and the probability surface above it, the decision boundary as the set of points with p = 0.5, and the sigmoid shape seen from the side (p. 16)](../images/L04_p16.png)
 
-*Lecture 04, Page 16: The two-dimensional feature space and the probability surface above it, the decision boundary as the set of points with p = 0.5, and the sigmoid shape seen from the side*
+*Figure 1. The two-dimensional feature space and the probability surface above it, the decision boundary as the set of points with p = 0.5, and the sigmoid shape seen from the side (p. 16)*
 
 1. **Two-dimensional feature space:** Each point of this plane is one input x = (x₁, x₂). Usually we only look at how class 0 and class 1 are divided on this plane by the decision boundary w₁x₁ + w₂x₂ + b = 0.
 2. **Every point has a probability:** Logistic regression does not just give a boundary; it computes a probability p = P(y = 1 | x) for every point of the feature space. Lifting this two-dimensional feature space and putting p on a third axis turns the whole feature space into a single **probability surface** (feature space → probability space).
@@ -976,9 +976,9 @@ After the first update the decision boundary comes down, and after the second it
 | 2nd update | 0.3 | 0.7 | −0.4 | x₂ = −0.429x₁ + 0.571 |
 | 3rd update | 0.5 | 0.7 | −0.2 | x₂ = −0.714x₁ + 0.286 |
 
-![Lecture 04, Page 33: Movement of the decision boundary of the OR perceptron (η = 0.2), coming down from the initial boundary through three updates to a boundary that separates (0, 0) from the other three points](../images/L04_p33.png)
+![Figure 2. Movement of the decision boundary of the OR perceptron (η = 0.2), coming down from the initial boundary through three updates to a boundary that separates (0, 0) from the other three points (p. 33)](../images/L04_p33.png)
 
-*Lecture 04, Page 33: Movement of the decision boundary of the OR perceptron (η = 0.2), coming down from the initial boundary through three updates to a boundary that separates (0, 0) from the other three points*
+*Figure 2. Movement of the decision boundary of the OR perceptron (η = 0.2), coming down from the initial boundary through three updates to a boundary that separates (0, 0) from the other three points (p. 33)*
 
 **Checking the final classification.** Checking every input with the final formula z = 0.5x₁ + 0.7x₂ − 0.2 gives the following.
 
@@ -1127,9 +1127,9 @@ h₁ computes "at least one is 1" (OR), h₂ computes "both are 1" (AND), and th
 
 A single perceptron can make only one line (a linear boundary), but combining several perceptrons (linear lines) can make more complex nonlinear boundaries.
 
-![Lecture 04, Page 37: Shapes of the class 1 region made by combining one, two, three, and four lines](../images/L04_p37a.png)
+![Figure 3. Shapes of the class 1 region made by combining one, two, three, and four lines (p. 37)](../images/L04_p37a.png)
 
-*Lecture 04, Page 37: Shapes of the class 1 region made by combining one, two, three, and four lines*
+*Figure 3. Shapes of the class 1 region made by combining one, two, three, and four lines (p. 37)*
 
 | Number of lines | Region that can be made | Example condition |
 |:---------------:|:------------------------|:------------------|
@@ -1142,9 +1142,9 @@ Combining more lines can even approximate complex nonlinear boundaries close to 
 
 **Adding layers can express more complex regions.** The deeper the network (the more layers), the more complex the decision boundaries it can make.
 
-![Lecture 04, Page 37: Decision regions expressed by a single perceptron, one and two hidden layers, and a deeper MLP](../images/L04_p37b.png)
+![Figure 4. Decision regions expressed by a single perceptron, one and two hidden layers, and a deeper MLP (p. 37)](../images/L04_p37b.png)
 
-*Lecture 04, Page 37: Decision regions expressed by a single perceptron, one and two hidden layers, and a deeper MLP*
+*Figure 4. Decision regions expressed by a single perceptron, one and two hidden layers, and a deeper MLP (p. 37)*
 
 | Structure | Network | Region expressed |
 |:----------|:--------|:-----------------|

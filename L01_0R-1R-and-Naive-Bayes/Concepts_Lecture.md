@@ -192,9 +192,9 @@ The age column then becomes a categorical feature that takes one of y1 to y4 ins
 
 Varying the number of intervals for Temperature gives the following.
 
-![Lecture 01, Page 4: Discretizing Temperature with different numbers of intervals (A one interval, B two intervals split at 77.5, C too many intervals)](../images/L01_p04.png)
+![Figure 1. Discretizing Temperature with different numbers of intervals (A one interval, B two intervals split at 77.5, C too many intervals) (p. 4)](../images/L01_p04.png)
 
-*Lecture 01, Page 4: Discretizing Temperature with different numbers of intervals (A one interval, B two intervals split at 77.5, C too many intervals)*
+*Figure 1. Discretizing Temperature with different numbers of intervals (A one interval, B two intervals split at 77.5, C too many intervals) (p. 4)*
 
 - **A. No split:** There is only one interval, which is very simple. It is the same as 0-R.
 - **B. Two intervals:** The split is at threshold = 77.5. This is the final 1-R rule.
@@ -534,9 +534,9 @@ These assumptions lead to the following strengths and weaknesses.
 
 Consider an example that treats words as attributes and separates spam from valid email (ham).
 
-![Lecture 01, Page 18: The spam example that uses words as attributes](../images/L01_p18.png)
+![Figure 2. The spam example that uses words as attributes (p. 18)](../images/L01_p18.png)
 
-*Lecture 01, Page 18: The spam example that uses words as attributes*
+*Figure 2. The spam example that uses words as attributes (p. 18)*
 
 | Doc | Email text | Class |
 |:---:|:-----------|:-----:|

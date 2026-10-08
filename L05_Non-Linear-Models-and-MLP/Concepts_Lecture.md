@@ -129,9 +129,9 @@ $$
 z = 4h_1 + 4h_2 + 4h_3 - 10, \qquad \hat{y} = \sigma(z)
 $$
 
-![Lecture 05, Page 2: The boundaries h1, h2, h3 of the three hidden units and the triangular class 1 region made by combining them](../images/L05_p02.png)
+![Figure 1. The boundaries h1, h2, h3 of the three hidden units and the triangular class 1 region made by combining them (p. 2)](../images/L05_p02.png)
 
-*Lecture 05, Page 2: The boundaries h1, h2, h3 of the three hidden units and the triangular class 1 region made by combining them*
+*Figure 1. The boundaries h1, h2, h3 of the three hidden units and the triangular class 1 region made by combining them (p. 2)*
 
 Inside the three boundaries (z₁ > 0, z₂ > 0, z₃ > 0), all three hidden units are close to 1, so z ≈ 4 × 3 − 10 = 2 > 0; outside, at least one is close to 0, so z < 0. In other words, **each hidden unit makes one linear boundary, and the output layer combines them to make a nonlinear decision region.**
 
@@ -304,9 +304,9 @@ MSE can be used for binary classification, but BCE is generally used. For an inp
 
 **Comparing loss values (when y = 1).** Let the answer be y = 1. If MSE is defined as L_MSE = ½(y − ŷ)², then L_MSE = ½(1 − ŷ)². The maximum at ŷ = 0 is therefore L_MSE = ½ = 0.5, and at ŷ = 1, L_MSE = 0. That is, the MSE curve starts exactly at 0.5 and goes down to 0. BCE, on the other hand, is L_BCE = −log(ŷ) (y = 1), so as ŷ → 0, −log(ŷ) → ∞. BCE does not start from some finite value; it diverges to infinity.
 
-![Lecture 05, Page 7: MSE and BCE loss curves over the prediction ŷ when the answer is y = 1](../images/L05_p07.png)
+![Figure 2. MSE and BCE loss curves over the prediction ŷ when the answer is y = 1 (p. 7)](../images/L05_p07.png)
 
-*Lecture 05, Page 7: MSE and BCE loss curves over the prediction ŷ when the answer is y = 1*
+*Figure 2. MSE and BCE loss curves over the prediction ŷ when the answer is y = 1 (p. 7)*
 
 | ŷ | MSE ½(1 − ŷ)² | BCE −ln ŷ |
 |:-:|:-------------:|:---------:|
@@ -676,9 +676,9 @@ Training a neural network can be compared to descending an uneven mountain.
 
 **2) Loss function of the MLP: non-convex.** In an MLP, many layers of nonlinear functions are composed, so the loss function has a very complex (non-convex) shape. Several local minima, saddle points, and flat regions exist, and the training can converge to different solutions depending on the initial values.
 
-![Lecture 05, Page 20: The convex loss of logistic regression (converging to the global minimum) and the non-convex loss of the MLP (local minimum, saddle point, flat region, global minimum), with the contours of each](../images/L05_p20.png)
+![Figure 3. The convex loss of logistic regression (converging to the global minimum) and the non-convex loss of the MLP (local minimum, saddle point, flat region, global minimum), with the contours of each (p. 20)](../images/L05_p20.png)
 
-*Lecture 05, Page 20: The convex loss of logistic regression (converging to the global minimum) and the non-convex loss of the MLP (local minimum, saddle point, flat region, global minimum), with the contours of each*
+*Figure 3. The convex loss of logistic regression (converging to the global minimum) and the non-convex loss of the MLP (local minimum, saddle point, flat region, global minimum), with the contours of each (p. 20)*
 
 Seen as contours, a convex loss function is a set of concentric ellipses around a single minimum, while a non-convex loss function has a complex shape that mixes several minima, saddle points, and flat regions.
 
@@ -996,9 +996,9 @@ Let us see how the expressive power changes when the width and depth are varied 
 - **Depth = number of hidden layers:** The number of hidden layers. Passing through several layers recombines the patterns made earlier to create more complex representations.
 - Example: 2 → 4 → 1 has width 4 and depth 1.
 
-![Lecture 05, Page 26: Decision boundaries on the circle data as the width (1, 2, 4, 8 hidden units) and depth (1, 2, 3 or more hidden layers) change](../images/L05_p26.png)
+![Figure 4. Decision boundaries on the circle data as the width (1, 2, 4, 8 hidden units) and depth (1, 2, 3 or more hidden layers) change (p. 26)](../images/L05_p26.png)
 
-*Lecture 05, Page 26: Decision boundaries on the circle data as the width (1, 2, 4, 8 hidden units) and depth (1, 2, 3 or more hidden layers) change*
+*Figure 4. Decision boundaries on the circle data as the width (1, 2, 4, 8 hidden units) and depth (1, 2, 3 or more hidden layers) change (p. 26)*
 
 **Changing the width: decision boundaries by number of hidden units (one hidden layer).**
 
@@ -1072,9 +1072,9 @@ $$
 
 In the order input x → h⁽¹⁾ → h⁽²⁾ → h⁽³⁾ → output y, the output of each layer becomes the input of the next and is a **new feature**.
 
-![Lecture 05, Page 27: The two classes becoming more and more separated in the original input space x, the space h(1) of the first hidden layer, and the space h(2) of the second hidden layer](../images/L05_p27.png)
+![Figure 5. The two classes becoming more and more separated in the original input space x, the space h(1) of the first hidden layer, and the space h(2) of the second hidden layer (p. 27)](../images/L05_p27.png)
 
-*Lecture 05, Page 27: The two classes becoming more and more separated in the original input space x, the space h(1) of the first hidden layer, and the space h(2) of the second hidden layer*
+*Figure 5. The two classes becoming more and more separated in the original input space x, the space h(1) of the first hidden layer, and the space h(2) of the second hidden layer (p. 27)*
 
 | Space | Appearance of the data |
 |:------|:-----------------------|
@@ -1192,9 +1192,9 @@ The goal is to keep the signal from becoming too small or too large as it passes
 
 **2. ReLU instead of the sigmoid.** The sigmoid saturates and its gradient becomes small, while ReLU passes gradients well in the positive region.
 
-![Lecture 05, Page 29: The sigmoid and its derivative (maximum 0.25), and ReLU and its derivative (1 in the positive region)](../images/L05_p29.png)
+![Figure 6. The sigmoid and its derivative (maximum 0.25), and ReLU and its derivative (1 in the positive region) (p. 29)](../images/L05_p29.png)
 
-*Lecture 05, Page 29: The sigmoid and its derivative (maximum 0.25), and ReLU and its derivative (1 in the positive region)*
+*Figure 6. The sigmoid and its derivative (maximum 0.25), and ReLU and its derivative (1 in the positive region) (p. 29)*
 
 | | Sigmoid (σ) | ReLU |
 |:--|:--|:--|

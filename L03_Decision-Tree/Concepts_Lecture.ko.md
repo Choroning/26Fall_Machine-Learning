@@ -576,9 +576,9 @@ CART는 Age < 65 하나만 시험하고 끝내지 않는다. 현재 node에서 �
 
 그래서 tree 성장 과정에서는 Gini와 entropy가 split 후보 사이의 미세한 차이를 더 잘 구분한다.
 
-![Lecture 03, Page 16: p = P(Class A)에 따른 misclassification error, Gini impurity, entropy의 곡선](../images/L03_p16.png)
+![그림 1. p = P(Class A)에 따른 misclassification error, Gini impurity, entropy의 곡선 (16쪽)](../images/L03_p16.png)
 
-*Lecture 03, Page 16: p = P(Class A)에 따른 misclassification error, Gini impurity, entropy의 곡선*
+*그림 1. p = P(Class A)에 따른 misclassification error, Gini impurity, entropy의 곡선 (16쪽)*
 
 세 기준 모두 같은 방향을 본다. 다만 error rate는 "몇 개 틀리나"를 직접 보고, Gini와 Entropy는 "얼마나 섞여 있나"를 더 부드럽게 본다.
 
@@ -660,9 +660,9 @@ graph TD
 
 아래 데이터에서는 대체로 x₁ < 5이면 A, x₁ ≥ 5이면 B이다. 그런데 왼쪽 영역의 (3, 3)에 B 하나가 관측되었다고 하자. 이 관측치는 측정 오류나 우연한 예외일 수도 있고, 아직 충분히 관측하지 못한 실제 하위 집단일 수도 있다.
 
-![Lecture 03, Page 17: 같은 훈련 데이터에 대한 두 경계, 왼쪽은 단순한 경계(training error 1개), 오른쪽은 예외적인 B 하나를 고립시킨 경계(training error 0개)](../images/L03_p17.png)
+![그림 2. 같은 훈련 데이터에 대한 두 경계, 왼쪽은 단순한 경계(training error 1개), 오른쪽은 예외적인 B 하나를 고립시킨 경계(training error 0개) (17쪽)](../images/L03_p17.png)
 
-*Lecture 03, Page 17: 같은 훈련 데이터에 대한 두 경계, 왼쪽은 단순한 경계(training error 1개), 오른쪽은 예외적인 B 하나를 고립시킨 경계(training error 0개)*
+*그림 2. 같은 훈련 데이터에 대한 두 경계, 왼쪽은 단순한 경계(training error 1개), 오른쪽은 예외적인 B 하나를 고립시킨 경계(training error 0개) (17쪽)*
 
 그림에서 원은 A, 삼각형은 B이며 배경색은 예측 class이다. 오른쪽은 B 하나를 고립시키기 위해 네 번의 분할을 추가한 예시이다.
 
@@ -774,9 +774,9 @@ root에서 leaf까지의 경로 하나가 규칙 하나가 되며, 경로 위의
 
 예를 들어 Decision Tree는 x₁의 한 값에서 세로 경계를 긋고, 그 오른쪽 영역을 x₂에서 가로로, 다시 아래쪽을 x₁에서 세로로 나누어 네 영역 A, B, C, D를 만든다. 반면 두 class가 대각선 방향으로 나뉘어 있다면 linear boundary는 대각선 하나로 충분하다. x가 왼쪽 위, o가 오른쪽 아래에 모여 있는 데이터에서 Decision Tree(DT)는 이 경계를 가로선과 세로선을 번갈아 그은 계단 모양으로 따라가야 하지만, Linear Model(LM)은 직선 하나로 나눈다.
 
-![Lecture 03, Page 22: 대각선으로 나뉘는 데이터에 대한 축 정렬 근사(Decision Tree의 계단 모양 경계)와 선형 경계의 비교](../images/L03_p22.png)
+![그림 3. 대각선으로 나뉘는 데이터에 대한 축 정렬 근사(Decision Tree의 계단 모양 경계)와 선형 경계의 비교 (22쪽)](../images/L03_p22.png)
 
-*Lecture 03, Page 22: 대각선으로 나뉘는 데이터에 대한 축 정렬 근사(Decision Tree의 계단 모양 경계)와 선형 경계의 비교*
+*그림 3. 대각선으로 나뉘는 데이터에 대한 축 정렬 근사(Decision Tree의 계단 모양 경계)와 선형 경계의 비교 (22쪽)*
 
 왼쪽의 axis-aligned approximation은 대각선 경계를 따라가기 위해 여러 번의 가로 분할과 세로 분할을 쌓은 계단을 만든다. 오른쪽의 linear boundary는 직선 하나로 같은 두 class를 분리한다.
 
